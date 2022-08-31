@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.navMenu {
+  display: block;
+}
+
+ul {
+  display: none;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #c70039;
+}
+.main {
+  background-image: url(./images/green1.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+}
+.earth {
+  background-image: url(images/earth.gif);
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  padding-bottom: 86%;
+  position: relative;
+}
+
+/* body {
+  background-image: url(./images/green1.jpg);
+  background-size: cover;
+  height: 100%;
+} */
+
+.focus {
+  padding-top: 2.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  display: block;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+  background-size: cover;
+}
+.hero {
+  display: flex;
+  gap: 1rem;
+  /* max-width: 480px; */
+  margin-top: 250px;
+  display: block;
+}
+
+.heroRight {
+  margin-top: 1.5rem;
+}
+
+.button {
+  width: 100%;
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  color: rgb(24, 135, 94);
+  border: 1px solid #d2beb780;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+p {
+  padding: 1rem 0;
+}
+span {
+  width: 40px;
+  height: 3px;
+  margin-top: 0.4rem;
+  background-color: green;
+  display: block;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #c70039;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 760px) {
+  .navMenu {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .heroRight {
+    padding-left: 50rem;
+    margin-bottom: 10rem;
+  }
+
+  .focus {
+    padding-top: 2.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    display: block;
+  }
+  .featureItem {
+    border: 1px red solid;
+  }
+
+  .navFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .copyright {
+    position: relative;
+    right: 850px;
+  }
+  #save {
+    font-size: 60px;
+    text-decoration: none;
+  }
+}
+
+.bubbles img {
+  width: 50px;
+  animation: bubble 7s linear infinite;
+}
+
+.bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+.bubbles img:nth-child(1) {
+  animation-delay: 2s;
+  width: 25px;
+}
+.bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.bubbles img:nth-child(3) {
+  width: 25px;
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+.bubbles img:nth-child(6) {
+  width: 20px;
+  animation-delay: 6s;
+}
+.bubbles img:nth-child(7) {
+  width: 35px;
+  animation-delay: 7s;
+}
