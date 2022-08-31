@@ -158,10 +158,9 @@ span {
 
   .navFooter {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.2rem;
-    padding-right: 540px;
+    /* padding: 0.2rem;*/
     background: #e0e0e0;
     box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
     background-size: cover;
@@ -171,8 +170,8 @@ span {
   }
 
   .copyright {
-    position: relative;
-    right: 400px;
+    /* position: relative; */
+    right: 200px;
   }
   #save {
     font-size: 60px;
