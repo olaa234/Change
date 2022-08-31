@@ -39,6 +39,10 @@ a {
   display: flex;
   text-align: left;
 }
+.logo {
+  font-size: 2rem;
+  color: #c70039;
+}
 
 @media only screen and (min-width: 760px) {
   .navMenu {
