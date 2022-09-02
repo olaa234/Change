@@ -20,6 +20,7 @@
 
 .navMenu {
   display: block;
+  cursor: pointer;
 }
 
 ul {
@@ -40,13 +41,14 @@ a {
   display: flex;
   text-align: left;
 }
-.earth {
-  background-image: url(images/earth.gif);
-  background-size: cover;
-  width: 100%;
-  height: 0;
-  padding-bottom: 86%;
-  position: relative;
+.overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #c70039;
 }
 
 /* body {
