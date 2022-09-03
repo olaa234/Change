@@ -15,16 +15,31 @@
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
+  position: relative;
 }
 
 .navMenu {
   display: block;
 }
-ul {
-  display: none;
+.navLink_Mobile {
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  opacity: 0;
 }
 
+.navLink {
+  display: none;
+}
+span {
+  width: 40px;
+  height: 3px;
+  margin-top: 0.4rem;
+  background-color: green;
+  display: block;
+}
 li,
 a {
   text-decoration: none;
@@ -43,7 +58,9 @@ a {
   font-size: 2rem;
   color: #c70039;
 }
-
+.open {
+  opacity: 1;
+}
 @media only screen and (min-width: 760px) {
   .navMenu {
     display: none;

@@ -16,10 +16,11 @@
 const navMenu = document.querySelector(".navMenu");
 const navLink = document.querySelector(".navLink");
 const links = document.querySelectorAll(".navLink li");
-console.log(links);
+const mobileLink = document.querySelector(".navLink_Mobile");
 
 navMenu.addEventListener("click", () => {
-  navLink.classList.toggle("open");
+  console.log(mobileLink);
+  mobileLink.classList.toggle("open");
 });
 
 links.forEach((link) => {

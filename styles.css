@@ -15,7 +15,6 @@
   background-size: cover;
   object-fit: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .navMenu {
@@ -23,8 +22,16 @@
   cursor: pointer;
 }
 
-ul {
+.navLink {
   display: none;
+}
+.navLink_Mobile {
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
 }
 
 li,
@@ -49,6 +56,10 @@ a {
   bottom: 0px;
   left: 0px;
   background-color: #c70039;
+}
+
+.open {
+  opacity: 1;
 }
 
 /* body {
@@ -122,12 +133,15 @@ span {
     display: none;
   }
 
-  ul {
+  .navLink {
+    display: block;
+  }
+
+  .navLink ul {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
   }
-
   .hero {
     display: flex;
     justify-content: flex-end;
