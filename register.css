@@ -5,6 +5,10 @@
   font-family: "Oxygen", sans-serif;
 }
 
+body {
+  background-color: #e0e0e0;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -46,14 +50,7 @@ a {
   list-style: none;
   color: #c70039;
 }
-.main {
-  background-image: url(./images/green1.jpg);
-  background-size: cover;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  text-align: left;
-}
+
 .logo {
   font-size: 2rem;
   color: #c70039;
@@ -61,6 +58,25 @@ a {
 .open {
   opacity: 1;
 }
+.formBody {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 760px) {
   .navMenu {
     display: none;
@@ -71,7 +87,9 @@ a {
     justify-content: space-between;
     gap: 1rem;
   }
-
+  .navLink {
+    display: block;
+  }
   .hero {
     display: flex;
     justify-content: flex-end;

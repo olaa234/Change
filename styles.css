@@ -33,6 +33,9 @@
   flex-direction: column;
   opacity: 0;
 }
+#save {
+  font-size: 40px;
+}
 
 li,
 a {
@@ -82,7 +85,7 @@ a {
   display: flex;
   gap: 1rem;
   /* max-width: 480px; */
-  margin-top: 250px;
+  margin-top: 170px;
   display: block;
 }
 
@@ -101,6 +104,7 @@ a {
   cursor: pointer;
 }
 p {
+  max-width: 300px;
   padding: 1rem 0;
 }
 span {
@@ -118,7 +122,7 @@ span {
 
 .navFooter {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0.2rem;
   background: #e0e0e0;
@@ -176,7 +180,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0.2rem;*/
+    padding: 1rem;
     background: #e0e0e0;
     box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
     background-size: cover;
