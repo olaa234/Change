@@ -20,6 +20,7 @@
 
 .navMenu {
   display: block;
+  cursor: pointer;
 }
 
 .navLink_Mobile {
@@ -28,6 +29,7 @@
   background-color: whitesmoke;
   border: 5px solid #55281780;
   position: absolute;
+  z-index: 100;
   top: 100px;
   opacity: 0;
 }
@@ -128,6 +130,10 @@ h1 {
 
   .navMenu {
     display: none;
+  }
+
+  .navLink {
+    display: block;
   }
 
   ul {
