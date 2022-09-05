@@ -5,6 +5,10 @@
   font-family: "Oxygen", sans-serif;
 }
 
+body {
+  background: #e0e0e0;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -86,6 +90,20 @@ a {
   margin-top: 1.5rem;
 }
 
+.premain,
+img {
+  margin-top: 40px;
+  position: relative;
+  background-size: cover;
+  margin-top: 40px;
+  height: auto;
+  max-width: 100%;
+  font-size: 18px;
+  border-radius: 6px;
+  overflow: hidden;
+  /* display: block; */
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -121,6 +139,18 @@ span {
 
 h1 {
   text-align: center;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 760px) {
@@ -186,5 +216,19 @@ h1 {
     max-width: 100%;
     font-size: 18px;
     border-radius: 6px;
+    overflow: hidden;
+    display: block;
+  }
+  .navFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
   }
 }
