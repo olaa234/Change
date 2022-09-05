@@ -35,7 +35,8 @@ body {
   position: absolute;
   z-index: 100;
   top: 100px;
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
 }
 
 .navLink {
@@ -59,7 +60,8 @@ a {
 }
 
 .open {
-  opacity: 1;
+  /* opacity: 1; */
+  display: block;
 }
 
 /* body {

@@ -25,13 +25,18 @@
 .navLink {
   display: none;
 }
+
+/* .navLink_Mobile ul {
+  background-color: #c70039;
+} */
 .navLink_Mobile {
   position: absolute;
   top: 100px;
   z-index: 100;
   display: flex;
   flex-direction: column;
-  opacity: 0;
+  display: none;
+  /* opacity: 0; */
 }
 #save {
   font-size: 40px;
@@ -51,7 +56,7 @@ a {
   display: flex;
   text-align: left;
 }
-.overlay {
+/* .overlay {
   opacity: 0;
   position: fixed;
   top: 0px;
@@ -59,10 +64,11 @@ a {
   bottom: 0px;
   left: 0px;
   background-color: #c70039;
-}
+} */
 
 .open {
-  opacity: 1;
+  /* opacity: 1; */
+  display: block;
 }
 
 /* body {
@@ -90,7 +96,7 @@ a {
 }
 
 .heroRight {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .button {
@@ -153,7 +159,7 @@ span {
   }
 
   .heroRight {
-    padding-left: 50rem;
+    padding-left: 55rem;
     margin-bottom: 10rem;
   }
 
@@ -171,6 +177,7 @@ span {
 
   p {
     display: block;
+    /* margin-left: 20px; */
   }
   .featureItem {
     border: 1px red solid;
