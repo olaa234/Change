@@ -1,0 +1,15 @@
+[
+  {
+    "companyName": "BlackEnergy",
+    "Location": "West-London",
+    "Time-zone": "West-African Gmt",
+    "Subsidiary": ["ManDef, Perkins, Llyods, Flutter"],
+    "isFintech": true
+  },
+  {
+    "name": "Small Startup",
+    "numberOfEmployees": 300,
+    "ceo": null,
+    "ratings": 4.3
+  }
+]
