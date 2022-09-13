@@ -53,7 +53,7 @@
     </header>
     <main>
       <div class="registration">
-        <form action="">
+        <form action="" id="registerForm">
           <div class="formBody">
             <div class="names">
               <h1>Register</h1>
@@ -71,16 +71,16 @@
               <label for="middleName"><b>middlename</b></label>
               <input
                 type="text"
-                placeholder="middleName"
+                placeholder="MiddleName"
                 firstname="middleName"
-                id="middleName"
+                id="middlename"
                 size="20"
                 required
               />
               <label for="lastName"><b>lastname</b></label>
               <input
                 type="text"
-                placeholder="lastname"
+                placeholder="Lastname"
                 firstname="lastname"
                 id="lastname"
                 size="20"
@@ -102,6 +102,7 @@
                 name="Country Code"
                 placeholder="Country Code"
                 value="+46"
+                id="phone"
                 size="2"
               />
               <input type="text" name="phone" placeholder="phone no." size="8"/
@@ -111,6 +112,7 @@
               <textarea
                 cols="30"
                 rows="4"
+                id="address"
                 placeholder="Current Address"
                 value="address"
                 required
@@ -121,6 +123,7 @@
                 type="text"
                 placeholder=" Enter Email"
                 name="email"
+                id="email"
                 required
               />
               <!-- <label for="password"><b>Password</b></label>
@@ -138,12 +141,15 @@
                 required
               />
               <br />
-              <button type="Submit" class="registration">Register</button>
+              <button type="Submit">Register</button>
             </div>
           </div>
         </form>
       </div>
+      <div class="alert"></div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./script.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
