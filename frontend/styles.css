@@ -152,6 +152,9 @@ span {
     justify-content: space-between;
     gap: 1rem;
   }
+  .navLink_Mobile {
+    display: none;
+  }
   .hero {
     display: flex;
     justify-content: flex-end;

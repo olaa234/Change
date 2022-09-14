@@ -32,21 +32,18 @@ function submitForm(e) {
 
   // save message
   saveMessages(firstname, middlename, lastname, phone, address, email);
+  // enable alert message
+
+  document.querySelector(".alert").style.display = "block";
+
+  // remove alert message
+  setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+
+    // reset the form
+    document.getElementById("registerForm").reset();
+  }, 2000);
 }
-
-// enable alert message
-
-document.querySelector(".alert").style.display = "block";
-
-// remove alert message
-
-setTimeout(() => {
-  document.querySelector(".alert").style.display = "none";
-}, 3000);
-
-// reset the form
-
-document.getElementById("registerForm").reset();
 
 // to get form values
 
