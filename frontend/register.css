@@ -90,6 +90,10 @@ a {
   display: none;
 }
 
+p {
+  margin-top: 20px;
+}
+
 @media only screen and (min-width: 760px) {
   .navMenu {
     display: none;
@@ -131,6 +135,7 @@ a {
   }
 
   p {
+    margin-top: 20px;
     display: block;
   }
   .featureItem {

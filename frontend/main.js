@@ -32,8 +32,8 @@ function submitForm(e) {
 
   // save message
   saveMessages(firstname, middlename, lastname, phone, address, email);
-  // enable alert message
 
+  // enable alert message
   document.querySelector(".alert").style.display = "block";
 
   // remove alert message

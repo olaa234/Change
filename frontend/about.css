@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.navMenu {
+  display: block;
+  cursor: pointer;
+}
+
+.navLink {
+  display: none;
+}
+
+/* .navLink_Mobile ul {
+    background-color: #c70039;
+  } */
+.navLink_Mobile {
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  /* opacity: 0; */
+}
+#save {
+  font-size: 40px;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #c70039;
+}
+.main {
+  background-image: url(./images/green1.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+}
+/* .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #c70039;
+  } */
+
+.open {
+  /* opacity: 1; */
+  display: block;
+}
+
+/* body {
+    background-image: url(./images/green1.jpg);
+    background-size: cover;
+    height: 100%;
+  } */
+
+.focus {
+  padding-top: 2.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  display: block;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+  background-size: cover;
+}
+.hero {
+  display: flex;
+  gap: 1rem;
+  /* max-width: 480px; */
+  margin-top: 170px;
+  display: block;
+}
+
+.button {
+  width: 100%;
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  color: rgb(24, 135, 94);
+  border: 1px solid #d2beb780;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+p {
+  max-width: 300px;
+  padding: 1rem 0;
+}
+span {
+  width: 40px;
+  height: 3px;
+  margin-top: 0.4rem;
+  background-color: green;
+  display: block;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #c70039;
+}
+
+@media only screen and (min-width: 760px) {
+  .navMenu {
+    display: none;
+  }
+
+  .navLink {
+    display: block;
+  }
+
+  .navLink ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .navLink_Mobile {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .focus {
+    padding-top: 2.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    display: block;
+    /* margin-left: 20px; */
+  }
+  .featureItem {
+    border: 1px red solid;
+  }
+}
