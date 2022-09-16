@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ebebeb;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.navMenu {
+  display: block;
+}
+.navLink_Mobile {
+  position: absolute;
+  display: flex;
+  /* background-color: whitesmoke; */
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  /* opacity: 0; */
+  display: none;
+}
+
+.navLink {
+  display: none;
+}
+span {
+  width: 40px;
+  height: 3px;
+  margin-top: 0.4rem;
+  background-color: green;
+  display: block;
+}
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #c70039;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #c70039;
+}
+.open {
+  /* opacity: 1; */
+  display: block;
+}
+.contactUs {
+  display: flex;
+  justify-content: center;
+}
+
+.formBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 400px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.alert {
+  width: 100%;
+  background: #e0e0e0;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  display: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 760px) {
+  .navMenu {
+    display: none;
+  }
+  .navLink_Mobile {
+    display: none;
+  }
+
+  .navLink {
+    display: block;
+  }
+  .navLink ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin-top: 20px;
+    display: block;
+  }
+  .featureItem {
+    border: 1px red solid;
+  }
+}
