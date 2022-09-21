@@ -37,6 +37,9 @@
   flex-direction: column;
   display: none;
   /* opacity: 0; */
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 8px 8px 32px #a1a1a1, -8px -8px 32px #ffffff;
 }
 #save {
   font-size: 40px;
@@ -47,7 +50,15 @@ a {
   text-decoration: none;
   list-style: none;
   color: #c70039;
+  font-size: 20px;
+  font-weight: 500;
 }
+
+li a:hover {
+  padding: 0.2rem 0;
+  border-bottom: 1px solid green;
+}
+
 .main {
   background-image: url(./images/green1.jpg);
   background-size: cover;
@@ -102,17 +113,33 @@ a {
 .button {
   width: 100%;
   margin-top: 2.5rem;
+  padding: 0.5rem;
   font-size: 1.2rem;
   color: rgb(24, 135, 94);
   border: 1px solid #d2beb780;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   outline: none;
   cursor: pointer;
 }
+.button:hover {
+  border-bottom: 1px solid red;
+}
+
 p {
   max-width: 300px;
   padding: 1rem 0;
 }
+
+p::before {
+  content: open-quote;
+  color: green;
+}
+
+p::after {
+  content: close-quote;
+  color: green;
+}
+
 span {
   width: 40px;
   height: 3px;

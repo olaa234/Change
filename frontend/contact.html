@@ -53,61 +53,55 @@
       </nav>
     </header>
     <main>
-      <div class="contactUs">
-        <form action="" id="contactUs">
-          <div class="formbody">
-            <div class="names">
-              <h1>Write to us</h1>
-              <p>Let us Know How we can be better.</p>
-              <hr />
-              <label for="name"><b>FullName</b></label>
-              <input
-                type="text"
-                placeholder="Full name"
-                id="fullName"
-                size="20"
-                required
-              />
-              <br />
-              <label for="phone"><b>Phone</b></label>
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone no"
-                size="8"
-                id="phone"
-                required
-              />
-              <br />
-              <label for="email"><b>Email</b></label>
-              <input
-                type="text"
-                placeholder="Enter Email"
-                id="email"
-                required
-              />
-              <br />
-              <textarea
-              cols="30"
-              rows="4"
-              id="message"
-              placeholder="Write US"
-              ></textarea>
-              <br />
-            </div>
+      <h1>Write to us</h1>
+      <form class ='form'>
+        <label for="name"><b>FullName</b></label>
+        <input
+          type="text"
+          placeholder="Full name"
+          id="fullName"
+          size="20"
+          required
+        />
+        <br />
+        <label for="phone"><b>Phone</b></label>
+        <input
+          type="text"
+          name="phone"
+          placeholder="Phone no"
+          size="8"
+          id="phone"
+          required
+        />
+        <br />
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          id="email"
+          required
+        />
+        <br />
+        <label for="message"><b>Message</label>
+        <textarea
+        cols="60"
+        rows="4"
+        id="message"
+        placeholder="Write US"
+        ></textarea>
+        <br />
+        
+        <button class='button' type="submit">Submit</button>
 
-            <div class="bottom">
-              
-              <button type="submit">Submit</button>
-            </div>
-            </div>
-          </div>
-        </form>
-        <div class="alert">Your Feedback is Sent Successfully!</div>
-      </div>
+      
+  <div class="alert">Your Feedback is Sent Successfully!</div>
+      </form>
+     
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./script.js"></script>
     <script src="./contact.js"></script>
   </body>
 </html>
+
+

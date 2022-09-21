@@ -35,6 +35,9 @@ body {
   z-index: 100;
   /* opacity: 0; */
   display: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 8px 8px 32px #a1a1a1, -8px -8px 32px #ffffff;
 }
 
 .navLink {
@@ -65,9 +68,13 @@ a {
 .formBody {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 450px;
+  padding: 1.5rem;
   margin: 0 auto;
   text-align: left;
+  border-radius: 16px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .names {
@@ -76,13 +83,20 @@ a {
   text-align: left;
 }
 
+.registration {
+  margin-top: 20px;
+}
+
 .gender {
   display: flex;
   flex-direction: column;
 }
 .alert {
-  width: 100%;
-  background: #e0e0e0;
+  width: 10%;
+  border-radius: 10px;
+  background: linear-gradient(315deg, #f0f0f0, #cacaca);
+  box-shadow: -14px -14px 28px #a8a8a8, 14px 14px 28px #ffffff;
+  /* background: #e0e0e0; */
   padding: 10px 20px;
   text-align: center;
   font-size: 18px;
@@ -92,6 +106,16 @@ a {
 
 p {
   margin-top: 20px;
+}
+.button {
+  width: 100%;
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  color: rgb(24, 135, 94);
+  border: 1px solid #d2beb780;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 760px) {

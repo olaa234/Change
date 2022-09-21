@@ -29,9 +29,22 @@ function submitForm(e) {
   var phone = getElementVal("phone");
   var address = getElementVal("address");
   var email = getElementVal("email");
+  var male = getElementVal("male");
+  var female = getElementVal("two");
+  var other = getElementVal("three");
 
   // save message
-  saveMessages(firstname, middlename, lastname, phone, address, email);
+  saveMessages(
+    firstname,
+    middlename,
+    lastname,
+    phone,
+    address,
+    email,
+    male,
+    female,
+    other
+  );
 
   // enable alert message
   document.querySelector(".alert").style.display = "block";
@@ -54,7 +67,10 @@ const saveMessages = (
   lastname,
   phone,
   address,
-  email
+  email,
+  male,
+  female,
+  other
 ) => {
   var newRegisterForm = registrationFormDB.push();
   newRegisterForm.set({
@@ -64,6 +80,9 @@ const saveMessages = (
     phone: phone,
     address: address,
     email: email,
+    male: male,
+    female: female,
+    gender: other,
   });
 };
 

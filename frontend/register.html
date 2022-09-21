@@ -94,14 +94,24 @@
             </div>
             <div class="gender">
               <br />
-              <label for="gender">Gender</label><br />
+              <label for="gender"><b>Gender</b></label
+              ><br />
               <div>
-                <input type="radio" value="male" name="gender" checked /> Male
-                <input type="radio" value="female" name="gender" /> Female
-                <input type="radio" value="other" name="gender" /> Other
+                <input
+                  type="radio"
+                  value="male"
+                  name="gender"
+                  id="male"
+                  checked
+                />
+                Male
+                <input type="radio" value="female" name="gender" id="two" />
+                Female
+                <input type="radio" value="other" name="gender" id="three" />
+                Other
               </div>
               <br />
-              <label for="phone">phone:</label>
+              <label for="phone"><b>phone:</b></label>
               <input
                 type="text"
                 name="Country Code"
@@ -112,7 +122,7 @@
               />
               <input type="text" name="phone" placeholder="phone no." size="8"/
               required> <br />
-              Current Address:
+              <b>Current Address:</b>
               <br />
               <textarea
                 cols="30"
@@ -146,7 +156,7 @@
                 required
               />
               <br />
-              <button type="Submit">Register</button>
+              <button class="button" type="Submit">Register</button>
             </div>
           </div>
         </form>
